@@ -1,5 +1,6 @@
 import data
 from random import randint
+from task_02 import task2
 
 def main():
     # generate random amounts and prices for each product in the list
@@ -31,7 +32,13 @@ def main():
     results_01.write(",\n")
     results_01.writelines(str(data.obj_list))
 
+    input_value = -1
+    min = randint(0,150)
+    max = -1
+    while (max < min):
+        max = randint(75, 200)
 
+    task2(input_value, min, max)
 
 
 if __name__ == '__main__':
